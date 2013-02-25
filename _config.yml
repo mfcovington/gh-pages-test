@@ -1,6 +1,7 @@
-auto: true
-markdown: rdiscount
+# auto: true
+# markdown: rdiscount
 # permalink: /:year/:month/:day/:title.html
 permalink: /:title.html
-rdiscount extensions: [smart]
-server: true
+# rdiscount extensions: [smart]
+pygments: false
+# server: true
