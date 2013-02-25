@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Your Name" />
+    <title>Documentation for The Random Heart Generator</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="/">Documentation for The Random Heart Generator</a></h1>
+    </header>
+    <section>
+      <div class="content">
+  <div id="post">
+    <h1></h1>
+    <h1>The Random Heart Generator</h1>
+
+<p>I made <a href="random_heart_generator.R">The Random Heart Generator</a> for Valentine's Day as part of a weekly class I help teach on R and ggplot.</p>
+
+<h2>Defaults</h2>
+
+<p>The default parameters of The Random Heart Generator are:</p>
+
+<p><code>r
+hearts(n = 5, up = TRUE, free.love = FALSE)
+</code></p>
+
+<h2>Usage</h2>
+
+<p>The Random Heart Generator plots five hearts of random size, position, and color (from the <a href="http://stat.ethz.ch/R-manual/R-patched/library/grDevices/html/palettes.html">rainbow color palette</a>):</p>
+
+<p><code>r
+source("random_heart_generator.R")
+hearts()
+</code></p>
+
+<p><img src="figure/default_hearts.png" alt="plot of chunk default_hearts" /></p>
+
+<p>By changing <code>n</code>, you can plot any number of hearts:</p>
+
+<p><code>r
+hearts(n = 10)
+</code></p>
+
+<p><img src="figure/ten_hearts.png" alt="plot of chunk ten_hearts" /></p>
+
+<p>However, if you try to plot too many (100+), you will get a warning to help prevent R from becoming non-responsive:</p>
+
+<p><code>r
+hearts(n = 150)
+</code></p>
+
+<p>```</p>
+
+<h2>[1] "That's way too many hearts for you to handle."</h2>
+
+<p>```</p>
+
+<p>This safeguard can be bypassed with the <code>free.love</code> option:</p>
+
+<p><code>r
+hearts(n = 150, free.love = TRUE)
+</code></p>
+
+<p><img src="figure/lots_of_hearts.png" alt="plot of chunk lots_of_hearts" /></p>
+
+<p>Since love can be messy, you can make your plot a bit more chaotic by changing the <code>up</code> option:</p>
+
+<p><code>r
+hearts(up = FALSE)
+</code></p>
+
+<p><img src="figure/up+down_hearts.png" alt="plot of chunk up+down_hearts" /></p>
+
+<!-- LINKS -->
+
+
+
+
+  </div>
+</div>
+
+    </section>
+  </body>
+</html>
