@@ -1,2 +1,3 @@
 permalink: /test/:year/:month/:day/:title
-markdown: rdiscount
+markdown: kramdown
+safe: true
