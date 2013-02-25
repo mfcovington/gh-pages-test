@@ -3,4 +3,4 @@ baseurl: /gh-pages-test
 figurl: /gh-pages-test/figure
 permalink: /:year/:title/
 pygments: true
-markdown: rdiscount
+markdown: redcarpet
