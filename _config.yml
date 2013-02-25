@@ -1,3 +1,5 @@
+name: GH Pages Test
+baseurl: /gh-pages-test/
 permalink: pretty
 markdown: kramdown
 safe: true
