@@ -1,1 +1,2 @@
 permalink: /test/:year/:month/:day/:title
+markdown: rdiscount
