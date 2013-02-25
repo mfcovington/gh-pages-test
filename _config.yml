@@ -4,3 +4,8 @@ figurl: /gh-pages-test/figure
 permalink: /:year/:title/
 pygments: true
 markdown: kramdown
+kramdown:
+ use_coderay: true
+ coderay:
+  coderay_css: class
+  coderay_line_numbers:
