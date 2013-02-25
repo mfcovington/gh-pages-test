@@ -1,4 +1,4 @@
-permalink: /test/:year/:month/:day/:title
+permalink: pretty
 markdown: kramdown
 safe: true
 auto: true
