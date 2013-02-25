@@ -3,5 +3,5 @@
 # permalink: /:year/:month/:day/:title.html
 # permalink: /:title
 # rdiscount extensions: [smart]
-pygments: true
+# pygments: true
 # server: true
