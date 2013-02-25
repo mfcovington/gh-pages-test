@@ -2,3 +2,4 @@ name: My GitHub Pages Test Site
 baseurl: /gh-pages-test
 figurl: /gh-pages-test/figure
 permalink: /:year/:title/
+pygments: true
