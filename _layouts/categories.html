@@ -8,13 +8,6 @@ layout: default
   <div class="recent">
     <h3>Recent {{ page.title }} Posts</h3>
     <ul>
-<!--       {% for post in site.categories.homework %}
-        <li>
-          <a href="{{ site.baseurl }}{{ post.url }}"><strong>{{ post.title }}</strong></a>{% if post.duedate %} [due: {{ post.duedate }}]{% endif %}
-        </li>
-      {% endfor %}
- -->
-
       {% for post in site.posts %}
         {% capture cat %}{{ post.categories | first }}{% endcapture %}
         {% if cat == page.title  %}
@@ -24,11 +17,6 @@ layout: default
           </li>
         {% endif %}
       {% endfor %}
-
-
-
-
-
     </ul>
   </div>
 </div>

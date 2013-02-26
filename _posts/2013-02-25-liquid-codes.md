@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Something with codes
-categories: fun
+categories: Exercises
 comments: true
 ---
 
