@@ -13,7 +13,7 @@ layout: default
     {% capture cat %}{{ post.categories | first }}{% endcapture %}
     {% if cat == page.title  %}
       <li>
-        <a href="{{ site.baseurl }}{{ post.url }}"><strong>{{ post.title }}</strong></a>{% if post.duedate %} [due: {{ post.duedate }}]{% endif %}
+        <a href="{{ site.baseurl }}{{ post.url }}"><strong>{{ post.title }}</strong></a> - {{ post.date | date: "%Y-%m-%d" }}{% if post.duedate %} [due: {{ post.duedate }}]{% endif %}
       </li>
     {% endif %}
   {% endfor %}

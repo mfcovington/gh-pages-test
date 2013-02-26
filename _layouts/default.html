@@ -15,14 +15,9 @@
   </head>
   <body>
     <div class="wrapper">
-<!--     <header>
-      <h1><a href="{{ site.baseurl }}/">{{ page.title }}</a></h1>
-    </header> -->
       <header>
         <h1 class="header"><a href="{{ site.baseurl }}/">R Club</a></h1>
         <h2 class="header">{{ page.title }}</h2>
-
-
       </header>
       <section>
         {{ content }}
@@ -34,7 +29,7 @@
             <h4><a href="{{ site.baseurl }}/{{ category | first | slugize | downcase }}">{{ category | first }} ({{ category | last | size }})</a></h4>
             <ul>
               {% for post in category.last limit: 3 %}
-                <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}</li>
+                <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}</li>
               {% endfor %}
             </ul>
           {% endfor %}
