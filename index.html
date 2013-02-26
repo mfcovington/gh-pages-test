@@ -1,5 +1,5 @@
 ---
-layout: layout
+layout: post
 title: Testing GH-Pages (w/ baseurl set, etc.)
 ---
 
@@ -12,5 +12,17 @@ title: Testing GH-Pages (w/ baseurl set, etc.)
       </li>
       {% endfor %}
     </ul>
+  </div>
+  <p>Test</p>
+  <div class="categories">
+    <h3>Recent Posts</h3>
+    {% for category in site.categories %}
+      <h4><a href="{{ site.baseurl }}/categories/{{ category | first | slugize }}">{{ category | first }} ({{ category | last | size }})</a></h4>
+      <ul>
+        {% for post in category.last %}
+          <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}</li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
   </div>
 </div>
