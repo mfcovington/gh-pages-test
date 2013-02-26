@@ -315,6 +315,9 @@ a.buttons:hover {
     text-decoration: none;
 }
 
+.duedate {
+    text-align: right;
+}
 
 /* Section - for main page content */
 

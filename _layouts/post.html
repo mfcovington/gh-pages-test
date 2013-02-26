@@ -2,6 +2,12 @@
 layout: default
 ---
 
+<div class = "duedate">
+  {% if page.duedate %}
+    <h3>Homework due by: {{ page.duedate }}</h3>
+  {% endif %}
+</div>
+
 <div class="content">
   <div id="post">
     {{ content }}
