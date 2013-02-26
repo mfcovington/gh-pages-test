@@ -28,7 +28,7 @@
           {% for category in site.categories %}
             <h4><a href="{{ site.baseurl }}/{{ category | first | slugize | downcase }}">{{ category | first }} ({{ category | last | size }})</a></h4>
             <ul>
-              {% for post in category.last limit: 3 %}
+              {% for post in category.last limit: 2 %}
                 <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}</li>
               {% endfor %}
             </ul>
