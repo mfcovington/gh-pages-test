@@ -1,7 +1,11 @@
 ---
-layout: default
+layout: post
 title: Something with codes
+categories: fun
+comments: true
 ---
+
+# Some code examples
 
 Happy fun highlighting.
 [More details](https://github.com/mojombo/jekyll/wiki/liquid-extensions)
