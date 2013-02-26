@@ -27,9 +27,6 @@
       <section>
         {{ content }}
       </section>
-<!--       <footer>
-        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-      </footer> -->
       <footer>
         <div class="categories">
           <h3>Categories</h3>
@@ -41,18 +38,6 @@
               {% endfor %}
             </ul>
           {% endfor %}
-          {% for tag in site.categories %}
-
-  {% assign t = tag.first %}
-
-  {% assign posts = tag.last %}
-
-  <a class="tag tag{{ posts | size }}" href="/categories/{{ t | to_id }}.html">{{ t }}</a>
-
-
-{% endfor %}
-
-
         </div>
       </footer>
     </div>
