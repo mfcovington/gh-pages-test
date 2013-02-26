@@ -7,7 +7,7 @@ layout: default
 </div>
 
 <div class="recent">
-<h3>Recent {{ page.title | capitalize }} Posts</h3>
+<h3>All {{ page.title | capitalize }} Posts</h3>
 <ul>
   {% for post in site.posts %}
     {% capture cat %}{{ post.categories | first }}{% endcapture %}
