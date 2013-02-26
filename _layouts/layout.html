@@ -19,19 +19,10 @@
       <h1><a href="{{ site.baseurl }}/">{{ page.title }}</a></h1>
     </header> -->
       <header>
-        <h1 class="header"><a href="{{ site.baseurl }}/">{{ page.title }}</a></h1>
-        <p class="header"></p>
+        <h1 class="header"><a href="{{ site.baseurl }}/">R Club</a></h1>
+        <h2 class="header">{{ page.title }}</h2>
 
-        <ul>
-          <li class="download"><a class="buttons" href="https://github.com/mfcovington/gh-pages-test/zipball/master">Download ZIP</a></li>
-          <li class="download"><a class="buttons" href="https://github.com/mfcovington/gh-pages-test/tarball/master">Download TAR</a></li>
-          <li><a class="buttons github" href="https://github.com/mfcovington/gh-pages-test">View On GitHub</a></li>
-        </ul>
 
-        <p class="header">This project is maintained by <a class="header name" href="https://github.com/mfcovington">mfcovington</a></p>
-
-      <p>tag cloud:</p>
-      {{ tag_cloud }}
       </header>
       <section>
         {{ content }}
@@ -39,7 +30,19 @@
 <!--       <footer>
         <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer> -->
-
+      <footer>
+        <div class="categories">
+          <h3>Recent Posts</h3>
+          {% for category in site.categories %}
+            <h4><a href="{{ site.baseurl }}/categories/{{ category | first | slugize }}">{{ category | first }} ({{ category | last | size }})</a></h4>
+            <ul>
+              {% for post in category.last %}
+                <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}</li>
+              {% endfor %}
+            </ul>
+          {% endfor %}
+        </div>
+      </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
 
