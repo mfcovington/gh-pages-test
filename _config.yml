@@ -4,3 +4,4 @@ figurl: /gh-pages-test/figure
 permalink: /:year/:title/
 pygments: true
 markdown: redcarpet
+auto: true
